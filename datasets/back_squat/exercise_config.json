@@ -1,0 +1,150 @@
+{
+    "exercise_name": "back_squat",
+
+    "category": "strength",
+
+    "primary_muscles": [
+        "quadriceps",
+        "glutes"
+    ],
+
+    "secondary_muscles": [
+        "hamstrings",
+        "core",
+        "lower_back"
+    ],
+
+
+    "camera_view": [
+        "side"
+    ],
+
+
+    "required_landmarks": [
+        "left_hip",
+        "right_hip",
+        "left_knee",
+        "right_knee",
+        "left_ankle",
+        "right_ankle",
+        "left_shoulder",
+        "right_shoulder"
+    ],
+
+
+    "angle_rules": {
+
+        "knee": {
+            "joint": "left_knee",
+
+            "landmarks": [
+                "left_hip",
+                "left_knee",
+                "left_ankle"
+            ],
+
+            "rom": {
+                "min": 70,
+                "max": 180
+            }
+        },
+
+
+        "hip": {
+            "joint": "left_hip",
+
+            "landmarks": [
+                "left_shoulder",
+                "left_hip",
+                "left_knee"
+            ],
+
+            "rom": {
+                "min": 70,
+                "max": 180
+            }
+        }
+    },
+
+
+    "movement": {
+
+        "primary_axis": "vertical",
+
+        "direction": {
+
+            "down_phase": {
+                "knee_angle": "decreasing"
+            },
+
+            "up_phase": {
+                "knee_angle": "increasing"
+            }
+        }
+    },
+
+    "repetition": {
+
+        "tracking_joint": "left_knee",
+
+        "start_condition": {
+            "angle": 170,
+            "operator": ">="
+        },
+
+        "bottom_condition": {
+            "angle": 90,
+            "operator": "<="
+        },
+
+        "threshold": 15,
+
+        "completion_condition": {
+            "return_to_start": true
+        }
+    },
+
+    "form_errors": {
+
+
+        "knee_valgus": {
+
+            "check": "knee_inside_foot",
+
+            "severity": "high",
+
+            "feedback": "Keep your knees aligned with your toes"
+        },
+
+
+        "insufficient_depth": {
+
+            "threshold": 100,
+
+            "feedback": "Go deeper into the squat"
+        },
+
+
+        "back_rounding": {
+
+            "check": "hip_shoulder_alignment",
+
+            "feedback": "Keep your back straight"
+        }
+
+    },
+
+
+    "feedback_messages": {
+
+        "good_rep": [
+            "Great repetition",
+            "Perfect form"
+        ],
+
+        "bad_rep": [
+            "Fix your knee position",
+            "Control your movement"
+        ]
+    }
+}
