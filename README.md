@@ -1,11 +1,4 @@
-تفضل ملف **`README.md`** كامل ومصمم باحترافية ليتم نسخه ولصقه مباشرة في المستودع (Repository) الخاص بكِ على GitHub.
-
-تم تنظيم المحتوى بلغة إنجليزية تقنية رصينة، مع استخدام أيقونات Markdown وتنسيق جداول وأكواد تجعل صفحة المشروع تبدو ممتازة.
-
----
-
-```markdown
-# 🏋️‍♂️ VC-Based Exercise Analysis Using MediaPipe BlazePose & Rule-Based Evaluation
+# 🏋️‍♂️ CV-Based Exercise Analysis Using MediaPipe BlazePose & Rule-Based Evaluation
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)
 ![MediaPipe](https://img.shields.io/badge/MediaPipe-BlazePose-orange.svg)
