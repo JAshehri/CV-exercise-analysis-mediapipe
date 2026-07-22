@@ -160,6 +160,5 @@ python main.py
 
 *AI & Computer Vision Student / Developer*
 
-```
-
-```
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](http://www.linkedin.com/in/joud-alshehri)
+[![X (Twitter)](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/JA_shehri)
