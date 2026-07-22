@@ -1,4 +1,4 @@
-# 🏋️‍♂️ CV-Based Exercise Analysis Using MediaPipe BlazePose & Rule-Based Evaluation
+# CV-Based Exercise Analysis Using MediaPipe BlazePose & Rule-Based Evaluation
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)
 ![MediaPipe](https://img.shields.io/badge/MediaPipe-BlazePose-orange.svg)
@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 Introduction
+## Introduction
 
 This repository contains a **Computer Vision-based Exercise Analysis System** designed to automatically evaluate human exercise performance from pre-recorded videos. Powered by **MediaPipe BlazePose**, the pipeline estimates 3D body landmarks, computes joint angles, extracts detailed motion features, counts repetitions dynamically, and generates personalized, rule-based feedback.
 
@@ -17,7 +17,7 @@ The system features a **modular, configuration-driven architecture**. All exerci
 
 ---
 
-## 🎯 Project Objectives
+## Project Objectives
 
 * **3D Pose Estimation:** Detect human body poses and extract 33 spatial $3D$ world coordinates $(X, Y, Z)$ using MediaPipe BlazePose.
 * **Joint Angle Calculation:** Measure major joint angles (elbows, shoulders, hips, knees) across exercise frames.
@@ -28,7 +28,7 @@ The system features a **modular, configuration-driven architecture**. All exerci
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```text
 code/
@@ -54,7 +54,7 @@ code/
 
 ---
 
-## 🧩 Module Overview
+## Module Overview
 
 | Module | Primary Responsibility |
 | --- | --- |
@@ -67,7 +67,7 @@ code/
 
 ---
 
-## 📂 Dataset & Configuration Structure
+## Dataset & Configuration Structure
 
 Each supported exercise resides in its own isolated dataset directory containing video assets and configuration rules:
 
@@ -89,7 +89,7 @@ exercise_folder/
 
 ---
 
-## 🤸 Currently Supported Exercises
+## Currently Supported Exercises
 
 1. **Air Squat** *(Lower Body)*
 2. **Back Squat** *(Lower Body)*
@@ -100,7 +100,7 @@ exercise_folder/
 
 ---
 
-## 📊 Experimental Results & System Evaluation
+## Experimental Results & System Evaluation
 
 The proposed system was evaluated on both **Reference** and **User** videos captured from multiple viewpoints (Front, Side, Back).
 
@@ -122,7 +122,7 @@ The proposed system was evaluated on both **Reference** and **User** videos capt
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -146,7 +146,7 @@ python main.py
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 * Enhance repetition counting logic for static isometric holds and non-cyclic/alternating movements.
 * Implement occlusion-handling techniques for side-view deep squats and frontal push-ups.
@@ -154,7 +154,7 @@ python main.py
 
 ---
 
-## 👤 Author
+## Author
 
 **Joud Ali Alshehri**
 
